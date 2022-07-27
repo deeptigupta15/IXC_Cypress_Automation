@@ -6,22 +6,25 @@ pipeline{
         choice(name: 'BROWSER', choices['chrome','edge','firefox'], description:"Chose the browser")
     }
 
+
     options{
         ansiColor('xterm')
     }
 
     stages{
-        stage('Building')
+        stage('Building'){
          steps{
              echo "Building..."
          }
-        stage('Testing')
+        }
+        stage('Testing'){
           steps{
               bat "npx i"
               bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
           }
-    }
-        stage('Deploying')
+        }
+    
+        stage('Deploying'){
             steps{
                 echo "Deploying..."
             }
@@ -32,3 +35,5 @@ pipeline{
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
         }
     }
+    }
+}
