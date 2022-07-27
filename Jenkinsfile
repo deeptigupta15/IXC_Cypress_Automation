@@ -19,8 +19,10 @@ pipeline{
         }
         stage('Testing'){
           steps{
-              bat "npm i"
+              withNPM(npmrcConfig:'my-custom-npmrc') {
+              bat "npm install"
               bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+              }
           }
         }
     
