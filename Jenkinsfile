@@ -3,12 +3,12 @@ pipeline{
 
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
-        choice(name: 'BROWSER', choices['chrome','edge','firefox'], description:"Chose the browser")
+        choice(name: 'BROWSER', choices:['chrome','edge','firefox'], description:"Chose the browser")
     }
 
 
     options{
-        ansiColor('xterm')
+        buildDiscarder(logRotator(numToKeepStr: '5'))
     }
 
     stages{
