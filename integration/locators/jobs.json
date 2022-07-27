@@ -1,0 +1,18 @@
+{
+    "jobSideNav":"#Jobs",
+    "newJobBtn":"#NewJob-btn",
+    "jobNumber":"[data-cy=name-input]",
+    "part":"[data-cy=parts]",
+    "samplingMethod":"#Sampling",
+    "accessControl":"[data-cy=accessControl]",
+    "samplingInterval":"[data-cy=interval-input]",
+    "totalSamples":"[data-cy=samples-input]",
+    "deleteBtn":"[data-cy=detail-delete]",
+    "saveBtn":"#Save-btn",
+    "closeBtn":"[data-cy=drawer-close]",
+    "deleteJobBtn":".icon-button.job-delete",
+    "popupDelBtn":"#popconfirm-btn-ok > span",
+    "sideWindow":".ant-drawer-content-wrapper",
+    "popupCancelBtn":"#popconfirm-btn-cancel"
+    
+}

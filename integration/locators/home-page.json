@@ -1,0 +1,43 @@
+{
+  "newPartBtn": "#NewPart-btn",
+  "firstRow": "tr:nth-child(1)",
+  "parttable": ".ant-table",
+  "partTableHeader": ".ant-table-thead",
+  "partSideMenu": "#Parts",
+  "searchPart": "#part-search",
+  "fileUploadArea": ".ant-upload-drag-container",
+  "fileUploadCancelBtn": ".ant-modal-footer > :nth-child(1)",
+  "fileUploadSaveBtn": ".ant-modal-footer > .ant-btn-primary",
+  "continueTitle": ".ant-modal-title",
+  "getStartedBtn": ".ant-modal-footer > .custom-modal-footer > :first-child",
+  "alertMeBtn": ".ant-modal-footer > .custom-modal-footer > .btn-primary",
+  "fileUpload": {
+    "drag": ".file-upload .ant-upload-drag-container",
+    "cancel": ".file-upload-modal .ant-modal-footer > :nth-child(1)",
+    "file": ".file-upload .ant-upload-list-item",
+    "uploads": ".file-upload .upload-info"
+  },
+  "sideWindowWrapper": {
+    "balloonPart": "[data-cy=detail-extract]",
+    "partReport": "[data-cy=detail-new-report]",
+    "exportPart":"[data-cy=detail-export]",
+    "detailDelete": "[data-cy=detail-delete]",
+    "closeDrawer":"[data-cy=drawer-close]",
+    "partName":"[name=name]",
+    "partNumber":"[name=number]",
+    "partRevision":".revision-select",
+    "revisionDropdown":".ant-select.ant-select-single.ant-select-show-arrow",
+    "createPartRev":".ant-btn.ant-btn-icon-only.btn-primary",
+    "yesBtn":".ant-btn.ant-btn-primary.ant-btn-sm",
+    "customer":"[data-cy=customer]",
+    "statusSection":".part-status.form-section",
+    "savedReports":"[data-cy=list-new-report]",
+    "partDocumentSection":"[data-cy=documentMiniList]",
+    "createNewReport":"[data-cy=list-new-report]",
+    "createDrawingbtn":"[data-cy=documentCardRevision]",
+    "downloadBtn":".ant-dropdown-trigger.icon-button",
+    "attachDocument": "[data-cy=list-new-document]",
+    "documentDelete": ".document-delete",
+    "cardContent": ".card-content"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "stylesPreset":"[data-cy=styles-preset-select]",
+    "defaultStyle":"#style-default",
+    "saveBtn":".ant-btn.ant-btn-lg.btn-primary.ant-dropdown-trigger",
+    "addBalloonStyle":"[data-cy=add-option-BalloonStyle]",
+    "addBalloon":"#style-1 > .ant-cascader > .ant-select-selector",
+    "classification":"[title=Incidental] > .ant-cascader-menu-item-content",
+    "selectStyles":"div.ant-select.ant-cascader.ant-select-lg.assign-picker",
+    "deleteBalloonStyle":"[data-icon=close-circle]"
+}

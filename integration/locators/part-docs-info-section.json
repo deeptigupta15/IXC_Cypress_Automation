@@ -1,0 +1,8 @@
+{
+  "typeSelect": "[data-cy=documentType] > .ant-select > .ant-select-selector > .ant-select-selection-item",
+  "numberInput": "[data-cy=number-input] > .ant-input",
+  "revisionInput": "[data-cy=revision-input] > .ant-input",
+  "nameInput": "[data-cy=name-input] > .ant-input",
+  "pageOneInput": "[data-cy=pageName-0-input]",
+  "pageTwoInput": "[data-cy=pageName-1-input]"
+}

@@ -1,0 +1,14 @@
+{
+    "documentTools": {
+      "container": ".document-tools",
+      "partNumber": "[data-cy=toolbar-part-number]",
+      "partRevisionSelect": "[data-cy=part-revision-select]",
+      "partDrawingSelect": "[data-cy=part-drawing-select]",
+      "addDrawingButton" :"[data-cy=drawing-rev-add-btn]",
+      "drawingRevisionSelect": "[data-cy=drawing-revision-select]",
+      "drawingRevisionHistoryButton":"[data-cy=drawing-rev-history-btn]",
+      "partRevisionBtn": "[data-cy=revise-part-btn]",
+      "drawingRevisionBtn": "[data-cy=revise-drawing-btn]",
+      "fileUploadNextButton": "button.ant-btn.ant-btn-primary"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "colLeft":"input[name=columnLeftLabel]",
+    "colRight":"input[name=columnRightLabel]",
+    "rowTop":"input[name=rowTopLabel]",
+    "rowBot":"input[name=rowBottomLabel]",
+    "ColRowsToSkip":"input[name=skipLabels]",
+    "gridColor":"[data-cy=lineColor-selected-color]",
+    "labelColor":"[data-cy=labelColor-selected-color]",
+    "ColourRed":"[title='#D0021B']",
+    "applyPagesButton":"[data-cy=Apply_to_All-btn]",
+    "gridSwitchDocToggle":"button[data-cy=grid-status-switch-doc]",
+    "gridSwitchPageToggle":"button[data-cy=grid-status-switch-page]",
+    "gridPageTitle":"[data-cy=part_grid_title]",
+    "gridPreviewContainer":".grid-preview-container"
+}
