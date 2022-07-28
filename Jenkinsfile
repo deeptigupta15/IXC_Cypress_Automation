@@ -2,7 +2,7 @@ pipeline{
     agent any
 
  environment {
-       nodejs = 'C:/Users/deepti.gupta/Application Data/npm/node_modules'
+       nodejs = 'C:/Program Files/nodejs'
  }
 
     parameters{
