@@ -1,7 +1,7 @@
 pipeline{
-    agent { docker { image 'node:8.12.0' } }
+    agent any
     environment {
-        HOME = '.'
+        'npm_config_cache=npm-cache'
     }
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
