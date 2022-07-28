@@ -1,10 +1,6 @@
 pipeline{
     agent any
 
- environment {
-       nodejs = 'C:/Program Files/nodejs'
- }
-
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
         choice(name: 'BROWSER', choices:['chrome','edge','firefox'], description:"Chose the browser")
@@ -23,10 +19,8 @@ pipeline{
         }
         stage('Testing'){
             steps{
-                 dir("nodejs") {
-              bat label: 'nodejs', script: 'npm.cmd install'
+              bat "npm install"
               bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
-                 }
           }
         }
     
