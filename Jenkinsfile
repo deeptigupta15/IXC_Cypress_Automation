@@ -3,6 +3,7 @@ pipeline{
 
  environment {
        nodejs = 'C:/Users/deepti.gupta/Application Data/npm/node_modules'
+ }
 
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
