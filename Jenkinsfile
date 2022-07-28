@@ -1,6 +1,8 @@
 pipeline{
-    agent any
-
+    agent { docker { image 'node:8.12.0' } }
+    environment {
+        HOME = '.'
+    }
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
         choice(name: 'BROWSER', choices:['chrome','edge','firefox'], description:"Chose the browser")
