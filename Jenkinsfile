@@ -1,7 +1,16 @@
 pipeline{
-    agent any
+    agent {
+        docker {
+            reuseNode true
+            image 'node:16.15'
+        }
+    }
+    
     environment {
-        'npm_config_cache=npm-cache'
+        // Override HOME to WORKSPACE
+        HOME = "${WORKSPACE}"
+        // or override default cache directory (~/.npm)
+        NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
     }
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
