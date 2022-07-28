@@ -1,6 +1,9 @@
 pipeline{
     agent any
 
+ environment {
+       nodejs = 'C:/Users/deepti.gupta/Application Data/npm/node_modules'
+
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
         choice(name: 'BROWSER', choices:['chrome','edge','firefox'], description:"Chose the browser")
@@ -18,12 +21,8 @@ pipeline{
          }
         }
         stage('Testing'){
-          steps{
-              node { 
-                def nodeHome = tool name: 'node-5.10.1', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
-                env.PATH = "${nodeHome}/bin:${env.PATH}"
-                bat "npm install"
-              }
+            steps{
+              bat label: 'nodejs', script: 'npm install'
               bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
           }
         }
