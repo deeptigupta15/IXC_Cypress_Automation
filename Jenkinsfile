@@ -23,8 +23,8 @@ pipeline{
         }
         stage('Testing'){
             steps{
-                 dir("${env.WORKSPACE}") {
-              bat label: 'nodejs', script: 'npm install'
+                 dir("nodejs") {
+              bat label: 'nodejs', script: 'npm.cmd install'
               bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
                  }
           }
