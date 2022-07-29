@@ -1,7 +1,5 @@
 pipeline{
     agent any
-
-    tools{nodejs "node"}
     
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
