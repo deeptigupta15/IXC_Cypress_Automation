@@ -6,7 +6,7 @@ pipeline{
         ansiColor('xterm')
         }
         environment {
-            java -Dfile.encoding=UTF-8
+            JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
         }
 
     
