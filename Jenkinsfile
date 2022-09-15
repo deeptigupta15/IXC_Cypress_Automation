@@ -6,7 +6,7 @@ pipeline{
         ansiColor('xterm')
         }
         environment {
-            java -Dfile.encoding=UTF-8 jenkins.war
+            java -Dfile.encoding=UTF-8
         }
 
     
