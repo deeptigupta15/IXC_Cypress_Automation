@@ -6,7 +6,7 @@ pipeline{
         ansiColor('xterm')
         }
         environment {
-            JAVA_TOOL_OPTIONS = UTF8
+            JAVA_TOOL_OPTIONS = "UTF8"
         }
 
     
