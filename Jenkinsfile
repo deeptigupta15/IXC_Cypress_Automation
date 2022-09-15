@@ -1,9 +1,11 @@
 pipeline{
-    agent any
+    agent  {
+            label 'QHSE'
+        }    
     
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
-        choice(name: 'BROWSER', choices:['chrome','edge','firefox'], description:"Chose the browser")
+        choice(name: 'BROWSER', choices:['chrome','edge','firefox'], description:"Choose the browser")
     }
 
 
