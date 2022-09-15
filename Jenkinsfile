@@ -1,7 +1,10 @@
 pipeline{
     agent  {
             label 'QHSE'
-        }    
+        }
+    options {
+            ansiColor('xterm')
+         } 
     
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
