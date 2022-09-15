@@ -1,18 +1,14 @@
 pipeline{
     agent  {
             label 'QHSE'
+            options{
+        ansiColor('xterm')
         }
 
     
     parameters{
         string(name: 'SPEC', defaultValue:"cypress/integration/**/**", description:"Enter the path")
         choice(name: 'BROWSER', choices:['chrome','edge','firefox'], description:"Choose the browser")
-    }
-
-
-    options{
-        ansiColor('xterm')
-        buildDiscarder(logRotator(numToKeepStr: '5'))
     }
 
     stages{
@@ -40,4 +36,5 @@ pipeline{
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
         }
     }
+}
 }
