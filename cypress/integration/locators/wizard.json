@@ -1,0 +1,39 @@
+{
+  "info": {
+    "title": "[data-cy=part_info_title]",
+    "info": "[data-cy=part_info_information]",
+    "btn": "#Part_Information"
+  },
+  "drawings":{
+    "title":"[data-cy=document_info_title]"
+  },
+  "tolerances": {
+    "title": "[data-cy=part_tols_title]",
+    "info": "[data-cy=part_tols_information]",
+    "btn": "#Default_Tolerances"
+  },
+  "balloons": {
+    "title": "[data-cy=part_balloons_title]",
+    "info": "[data-cy=part_balloons_information]",
+    "btn": "#Balloon_Styles"
+  },
+  "grid": {
+    "title": "[data-cy=part_grid_title]",
+    "info": "[data-cy=part_grid_information]",
+    "btn": "#Grid_Zones"
+  },
+  "extract": {
+    "btn": "#Data_Extraction"
+  },
+  "review": {
+    "btn": "#Feature_Review"
+  },
+  "reportBtn":"#Report-btn",
+  "toolBar":".extract-tools",
+  "toolLoader":".ixc-full-toolbar-container .ant-spin",
+  "alert": ".ant-message-notice-content",
+  "toolTip": ".ant-tooltip-inner",
+  "infoIcon": ".info-block > .anticon",
+  "next":"#Next-btn",
+  "back":"#Back-btn"
+}

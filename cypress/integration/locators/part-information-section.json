@@ -1,0 +1,20 @@
+{
+  "customer": "[data-cy=customer] > .ant-select > .ant-select-selector",
+  "partName": "[data-cy=number-input]",
+  "partNumber": "[data-cy=number-input]",
+  "partRevision": "[data-cy=revision-input]",
+  "drawingName": ".ant-select-selection-item",
+  "drawingNumber": "[data-cy=number-input]",
+  "drawingRevision": "[data-cy=revision-input]",
+  "metricLabel": "#radio-measurement-Metric-label",
+  "imperialLabel": "#radio-measurement-Imperial-label",
+  "addCustomer": "#add-new-option",
+  "newCustomerName":"label > .ant-input",
+  "createCustomerOkButton":".ant-btn-primary",
+  "tolerancesBtn": "[data-cy=Tolerances-btn-footer]",
+  "nextBtn": "#Next-btn",
+  "tolerancesBtnWithin": "[data-cy=Tolerances-btn-footer]",
+  "pageOneInput": "[data-cy=pageName-0-input]",
+  "pageTwoInput": "[data-cy=pageName-1-input]",
+  "deleteConfirm": ".ant-popover-buttons > .ant-btn-primary"
+}

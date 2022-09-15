@@ -1,0 +1,40 @@
+{
+    "metricMeasurement": "#radio-metric",
+    "tolerancePreset": "[data-cy=tolerances-preset-select]",
+    "imperialMeasurement": "#radio-imperial",
+    "linearSection": "#Linear-section",
+    "angularSection": "#Angular-section",
+    "formTitle": "h2.form-title",
+    "linearTypeSelector": "#Linear-type-selector",
+    "angularTypeSelector": "#Angular-type-selector",
+    "applyByPrecisionRadioButton": "input[value=PrecisionTolerance]",
+    "addTolerance": "[data-cy=add-option-Tolerance]",
+    "unit": ".ant-select-selection-item",
+    "linear": ":nth-child(1) > .ant-collapse-header > .panel-header",
+    "linearTable": {
+        "precisionTopColumn": "#Linear-table> tbody > tr > th:nth-child(1)",
+        "rangeTopColumn": "#Linear-table> tbody > tr > th:nth-child(1)",
+        "rangeHeader": "#Linear-RangeTolerance",
+        "plusTotheader": "#Linear-plus",
+        "MinusTotHeader": "#Linear-minus",
+        "plusTolTopColumn": "#Linear-table> tbody > tr > th:nth-child(2)",
+        "minusTolColumn": "#Linear-table> tbody > tr > th:nth-child(3)",
+        "deleteRadioButtonColumn": "#Linear-table> tbody > tr > th:nth-child(4)",
+        "precisionDropdown": ".ant-select-item.ant-select-item-option",
+        "deleteRow": "[data-icon=close-circle]",
+        "rangeRadioButton": "#Linear-type-selector > .ant-radio-group > :nth-child(2) > .ant-radio > .ant-radio-input",
+        "linearRangeToleranceHeader": "#Linear-RangeTolerance",
+        "addTolerance": "[data-cy=add-option-Tolerance]"
+    },
+    "angular": ":nth-child(2) > .ant-collapse-header > .panel-header",
+    "angularTable": {
+        "angularTopColumn": "#Angular-table > tbody > tr >th:nth-child(1)",
+        "angularplusTolTopColumn": "#Angular-table > tbody > tr > th:nth-child(2)",
+        "angularminusTolColumn": "#Angular-table> tbody > tr > th:nth-child(3)",
+        "deleteRadioButtonColumn": "#Linear-table> tbody > tr > th:nth-child(4)",
+        "deleteRow": "[data-icon=close-circle]",
+        "precisionDropdown": "#Angular-0-precision > .ant-select > .ant-select-selector > .ant-select-selection-item",
+        "rangeRadioButton": "#Angular-type-selector > .ant-radio-group > :nth-child(2) > .ant-radio",
+        "addTolerance": "#Angular-section > .tolerance-actions > .add-option > [data-cy=add-option-Tolerance]"
+    }
+}

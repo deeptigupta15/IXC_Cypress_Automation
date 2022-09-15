@@ -1,0 +1,20 @@
+{
+  "it": "#SideNavMenu",
+  "partsIcon": "#Parts",
+  "partsSubMenu": "#Parts\\$Menu",
+  "partsList": "#My_Parts",
+  "templates": "#Templates",
+  "partInformationIcon": "#Part_Information",
+  "defaultTolerancesIcon": "#Default_Tolerances",
+  "balloonStylesIcon": "#Balloon_Styles",
+  "gridZonesIcon": "#Grid_Zones",
+  "dataExtractionIcon": "#Data_Extraction",
+  "featureReviewIcon": "#Feature_Review",
+  "sideNavOpenCloseToggle": "#SideNavMenu .ant-layout-sider-trigger",
+  "wizardOpenCloseToggle": ".wizard-drawer .ant-layout-sider-trigger",
+  "settings": "#Settings",
+  "settingsSubMenu": "#Settings\\$Menu",
+  "logo": ".logo",
+  "user": "#User",
+  "logout": "#Logout"
+}

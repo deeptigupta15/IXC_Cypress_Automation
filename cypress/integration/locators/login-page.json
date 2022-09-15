@@ -1,0 +1,7 @@
+{
+  "email": "#email",
+  "password": "#password",
+  "confirmPassword": "#confirmPassword",
+  "loginBtn": "button[type=submit]",
+  "forgotPasswordLinkage": "a[href=\"/auth/forgot-password\"]"
+}

@@ -1,0 +1,50 @@
+{
+  "Settings": "#Settings",
+  "companyProfile": "#Company_Profile",
+  "UserSettings": {
+    "firstName": "#firstName",
+    "lastName": "#lastName",
+    "phoneNumber": "#phoneNumber",
+    "saveBtn": ".ant-btn.ant-btn-primary",
+    "resetBtn": "[data-icon=undo]",
+    "cancelBtn": ".anticon.anticon-close",
+    "settings": "[data-icon=setting]",
+    "companyProfile": "#Company_Profile"
+  },
+  "Preferences": {
+    "preferences": ".anticon.anticon-setting",
+    "language": ".ant-select-selection-item",
+    "GDTcheckbox": "#promptFont",
+    "saveBtn": "#SettingsSubmit-btn-btn"
+  },
+  "CompanyProfile": {
+    "Organization": "#orgName",
+    "PrimaryPhone": "#orgPhone",
+    "Street": "#orgStreet",
+    "Street2": "#orgStreet2",
+    "City": "#orgCity",
+    "State": "#orgRegion",
+    "PostalCode": "#orgPostalcode",
+    "Country": "#orgCountry",
+    "SaveBtn": ".ant-btn.ant-btn-primary.ant-btn-lg",
+    "ResetBtn": ".ant-btn.ant-btn-lg"
+  },
+  "Seats": {
+    "InviteUsers": "[data-cy=invite-users]",
+    "Email": "[data-cy=modal-email-input]",
+    "SendInvites": "[data-cy=confirm-invite]",
+    "SearchUser": ".ant-input.ant-input-lg",
+    "InactiveCheckbox": "[data-cy=inactive-checkbox]",
+    "PaidAdminRole": "[title=Admin]",
+    "PaidAdminAccessControl": "[title=Unrestricted]",
+    "PaidRoleDropdown": ".ant-select-selection-search",
+    "AccessControlDropdown": ".ant-select-selection-item"
+  },
+  "Operators": {
+    "AddOperator": "[data-cy=invite-users]",
+    "firstName": "#add_operator_firstName",
+    "lastName": "#add_operator_lastName",
+    "submitBtn": "button.ant-btn.ant-btn-primary",
+    "searchName": "input.ant-input.ant-input-lg"
+  }
+}

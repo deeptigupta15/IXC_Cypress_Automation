@@ -1,0 +1,20 @@
+{
+  "warningMessage": ".ant-message-custom-content span",
+  "featureCard": ".ant-card-meta",
+  "featureCardBalloon": ".balloon-number",
+  "featureCardTitle": ".ant-card-meta-title",
+  "featureCardFullSpec": ".edit-in-place > .ant-input",
+  "input": ".ant-input",
+  "select": ".ant-select",
+  "label": ".label-text",
+  "dropdownMenu": "[data-cy=customer] > .ant-select > .ant-select-selector",
+  "dropdownOptions": ".ant-select-item-option",
+  "dropdownItems": {
+    "1": "[title=1]",
+    "2": "[title=2]",
+    "3": "[title=3]",
+    "4": "[title=4]",
+    "5": "[title=5]",
+    "6": "[title=6]"
+  }
+}
