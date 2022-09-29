@@ -1,8 +1,8 @@
 {
     "documentTools": {
       "container": ".document-tools",
-      "partNumber": "[data-cy=toolbar-part-number]",
-      "partRevisionSelect": "[data-cy=part-revision-select]",
+      "partNumber": "[data-cy=number-input] > .ant-input",
+      "partRevisionSelect": "[data-cy=revision-input] > .ant-input",
       "partDrawingSelect": "[data-cy=part-drawing-select]",
       "addDrawingButton" :"[data-cy=drawing-rev-add-btn]",
       "drawingRevisionSelect": "[data-cy=drawing-revision-select]",

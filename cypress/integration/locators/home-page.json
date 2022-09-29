@@ -1,5 +1,5 @@
 {
-  "newPartBtn": "#NewPart-btn",
+  "newPartBtn": "#NewPart-btn > :nth-child(2)",
   "firstRow": "tr:nth-child(1)",
   "parttable": ".ant-table",
   "partTableHeader": ".ant-table-thead",

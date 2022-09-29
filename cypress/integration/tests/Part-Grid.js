@@ -3,6 +3,7 @@ const homePage = require('../locators/home-page.json');
 const partGrid = require('../locators/part-grid.json');
 const wizard = require('../locators/wizard.json');
 const partInformation = require('../locators/part-information-section.json');
+const docInformation = require('../locators/part-docs-info-section.json');
 import { faker } from '@faker-js/faker';
 
 import 'cypress-file-upload';
@@ -13,7 +14,8 @@ describe('Part Creation Wizard', () => {
 
   before(() => {
     cy.login('spartan.ideagen@gmail.com', 'Te@mSp@rtan1');
-    cy.get(homePage.newPartBtn).should('exist').click();
+    cy.get(homePage.newPartBtn,{ timeout: 10000 }).should('be.visible')
+    cy.get(homePage.newPartBtn).should('exist').click()
     cy.get(homePage.fileUploadArea).attachFile(fileName, { subjectType: 'drag-n-drop' });
     cy.get(homePage.fileUpload.file, { timeout: 30000 }).should('be.visible');
     cy.get(homePage.fileUploadArea).should('be.visible')
@@ -26,8 +28,8 @@ describe('Part Creation Wizard', () => {
     cy.get(partInformation.partNumber).clear().type(faker.random.numeric(4));
     cy.get(partInformation.partRevision).clear().type(faker.random.alphaNumeric());
     cy.get(wizard.next).click();
-    cy.get(partInformation.drawingNumber).type(faker.random.numeric(4));
-    cy.get(partInformation.drawingRevision).clear().type(faker.random.alphaNumeric(2));
+    cy.get(docInformation.drawingNumber).type(faker.random.numeric(4));
+    cy.get(docInformation.drawingRevision).clear().type(faker.random.alphaNumeric(2));
     cy.get(wizard.next).click();
     cy.get(wizard.tolerances.title).should('exist');
     cy.get(wizard.next).click()

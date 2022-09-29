@@ -1,11 +1,9 @@
 {
   "customer": "[data-cy=customer] > .ant-select > .ant-select-selector",
-  "partName": "[data-cy=number-input]",
+  "partName": "[data-cy=name-input] > .ant-input",
   "partNumber": "[data-cy=number-input]",
+  "documentControl": "[data-cy=accessControl] > .ant-select > .ant-select-selector > .ant-select-selection-item",
   "partRevision": "[data-cy=revision-input]",
-  "drawingName": ".ant-select-selection-item",
-  "drawingNumber": "[data-cy=number-input]",
-  "drawingRevision": "[data-cy=revision-input]",
   "metricLabel": "#radio-measurement-Metric-label",
   "imperialLabel": "#radio-measurement-Imperial-label",
   "addCustomer": "#add-new-option",
